@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bow shader test</title>
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-50">
+<div class="w-full flex flex-col items-center justify-center">
+    <div class="bg-white mt-12 p-8 shadow-2xl rounded-xl inline-flex">
+        <div class="relative" width="482" height="225">
+            <svg viewBox="0 0 482 225" width="482" height="225" class="z-10">
+                <path
+                    class="outerStroke"
+                    d="M206.462 148.722L181.468 172.664C164.6 190.573 139.044 205 112.499 205C61.4134 205 20 163.587 20 112.501C20 61.4146 61.4134 20.0011 112.499 20.0011C136.19 20.0011 156.178 32.153 172.543 46.8L308.857 178.2C325.222 192.847 345.21 204.999 368.9 204.999C419.986 204.999 461.4 163.585 461.4 112.499C461.4 61.4134 419.986 20 368.9 20C342.356 20 316.8 34.4267 299.932 52.336L276.401 77.6093"
+                    fill="none"
+                    stroke="#EEF0F6"
+                    stroke-width="40"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                />
+            </svg>
+            <canvas
+                width="482" height="225"
+                id="canvas"
+                class="absolute inset-0 z-20"
+            ></canvas>
+        </div>
+    </div>
+</div>
+
+<div class="mt-12 flex items-center justify-center">
+    <button type="button" id="toggle" class="bg-white py-2 px-4 text-black border hover:bg-gray-100">Toggle mask</button>
+</div>
+
+
+<svg class="svg">
+    <clipPath id="my-clip-path" clipPathUnits="userSpaceOnUse"><path d="M292.652 45.48C310.864 26.144 338.894 10 368.9 10c56.609 0 102.5 45.89 102.5 102.499 0 56.609-45.891 102.5-102.5 102.5-27.26 0-49.555-13.992-66.712-29.348a10.729 10.729 0 0 1-.271-.251L165.738 54.13C150.198 40.254 132.562 30 112.499 30 66.936 30.001 30 66.937 30 112.501 30 158.064 66.936 195 112.499 195c23.083 0 46.165-12.71 61.69-29.192a8.9 8.9 0 0 1 .362-.365l24.994-23.942c3.988-3.821 10.318-3.685 14.138.304 3.821 3.988 3.685 10.318-.304 14.138l-24.812 23.769C170.351 198.962 142.407 215 112.499 215 55.891 215 10 169.11 10 112.501c0-56.61 45.89-102.5 102.499-102.5 27.261 0 49.556 13.991 66.713 29.348.092.082.182.166.271.251l136.179 131.27c15.539 13.876 33.176 24.129 53.238 24.129 45.563 0 82.5-36.937 82.5-82.5S414.463 30 368.9 30c-23.072 0-46.146 12.7-61.67 29.172a3.578 3.578 0 0 0-.018.02L283.72 84.424c-3.764 4.042-10.091 4.268-14.133.504-4.042-3.763-4.268-10.09-.505-14.133l23.531-25.273.039-.042Z"></path></clipPath>
+</svg>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
